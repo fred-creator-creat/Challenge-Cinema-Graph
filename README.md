@@ -19,7 +19,7 @@ O banco de dados contém 10 nós e relacionamentos que conectam:
 - **Diretores** que dirigiram as obras.
 
 ## 🚀 Como rodar o projeto
-Basta copiar o código presente no arquivo `script.cypher` e executá-lo em um console Neo4j. Para visualizar os dados após a criação, utilize o comando:
+Basta copiar o código presente no arquivo `Desafio_Cypher.txt` e executá-lo em um console Neo4j. Para visualizar os dados após a criação, utilize o comando:
 `MATCH (n) RETURN n`
 
 ---
