@@ -1,0 +1,4 @@
+MERGE (n3:Genre {name: "Ficção Científica"})<-[:BELONGS_TO]-(:Series {title: "Stranger Things"})<-[:ASSISTIU {rating: 4}]-(n1:User {name: "Carlos"})-[:WATCHED {rating: 5}]->(n0:Movie {title: "Matrix"})<-[:ACTED_IN]-(:Actor {name: "Keanu Reeves"})
+MERGE (:Director {name: "Lana Wachowski"})<-[:DIRECTED_BY]-(n0)-[:BELONGS_TO]->(n3)
+MERGE (n1)-[:WATCHED {rating: 5}]->(n6:Movie {title: "John Wick"})-[:BELONGS_TO]->(:Genre {name: "Action"})
+MERGE (:Actor {name: "Ian McShane"})-[:ACTED_IN]->(n6)-[:DIRECTED_BY]->(:Director {name: "Chad Stahelski"})
